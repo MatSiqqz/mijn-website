@@ -29,7 +29,7 @@ export default function App() {
     <a className="skip-link" href="#main-content" onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus(); }}>Direct naar inhoud</a>
     <header className="site-header">
       <div className="header-inner container">
-        <Link to="/" className="brand" aria-label="Mats de Roon, naar home"><span className="brand-symbol" aria-hidden="true">m<span>.</span></span><span>Mats de Roon<span className="orange">.</span></span></Link>
+        <Link to="/" className="brand" aria-label="Mats de Roon, naar home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}images/mr-logo.png`} alt="" aria-hidden="true" /><span className="brand-name">Mats de Roon<span className="orange">.</span></span></Link>
         <nav className="desktop-nav" aria-label="Hoofdnavigatie">{navigation.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'}>{label}</NavLink>)}</nav>
         <Link className="header-cv" to="/cv">Mijn CV<ArrowUpRight size={16} aria-hidden="true" /></Link>
         <button className="menu-toggle" aria-label={menuOpen ? 'Menu sluiten' : 'Menu openen'} aria-expanded={menuOpen} aria-controls="mobile-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
@@ -50,6 +50,6 @@ export default function App() {
         <Route path="*" element={<section className="container not-found"><p className="eyebrow">404 / EVEN DE WEG KWIJT</p><h1>Een andere afslag.</h1><p>Deze pagina bestaat niet. Mijn portfolio vind je hier.</p><Link className="button button-primary" to="/">Terug naar home<ArrowUpRight size={18} /></Link></section>} />
       </Routes>
     </main>
-    <footer className="site-footer"><div className="container"><div className="footer-top"><Link to="/" className="brand footer-brand"><span className="brand-symbol" aria-hidden="true">m<span>.</span></span><span>Mats de Roon<span className="orange">.</span></span></Link><p>Een eigen koers. Stap voor stap.</p><Link className="footer-top-link" to="/over-mij">Even kennismaken <ArrowUpRight size={17} /></Link></div><div className="footer-bottom"><span>© 2026 Mats de Roon</span><span>Hogeschool Rotterdam · Portfolio 2026–2027</span><Link to="/colofon">Over dit portfolio<ArrowUpRight size={13} /></Link></div></div></footer>
+    <footer className="site-footer"><div className="container"><div className="footer-top"><Link to="/" className="brand footer-brand" aria-label="Mats de Roon, naar home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}images/mr-logo.png`} alt="" aria-hidden="true" /><span>Mats de Roon<span className="orange">.</span></span></Link><p>Een eigen koers. Stap voor stap.</p><Link className="footer-top-link" to="/over-mij">Even kennismaken <ArrowUpRight size={17} /></Link></div><div className="footer-bottom"><span>© 2026 Mats de Roon</span><span>Hogeschool Rotterdam · Portfolio 2026–2027</span><Link to="/colofon">Over dit portfolio<ArrowUpRight size={13} /></Link></div></div></footer>
   </>;
 }

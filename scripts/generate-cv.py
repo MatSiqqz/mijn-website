@@ -57,7 +57,7 @@ def generate() -> None:
     text(48, 111, "Eerste versie · november 2026", size=9, color=MUTED)
     text(45, 168, "Mats de Roon", size=47, bold=True)
     text(48, 201, "Student ondernemerschap", size=18)
-    text(48, 224, "Hogeschool Rotterdam · 18 jaar", size=11, color=MUTED)
+    text(48, 224, "Hogeschool Rotterdam · 19 jaar", size=11, color=MUTED)
     page.draw_line((48, 245), (104, 245), color=ORANGE, width=4)
 
     text(48, 279, "01", size=10, bold=True, color=ORANGE)

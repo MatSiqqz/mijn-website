@@ -8,7 +8,7 @@ const cvUrl = `${import.meta.env.BASE_URL}documents/cv-mats-de-roon.pdf`;
 export function AboutPage() {
   return <>
     <PageIntro number="01" label="OVER MIJ" title="Ik ben Mats." accent="Mijn verhaal krijgt vorm.">
-      <p>18 jaar. Eerstejaars student. En aan het begin van mijn ontwikkeling als ondernemer.</p>
+      <p>19 jaar. Eerstejaars student. En aan het begin van mijn ontwikkeling als ondernemer.</p>
     </PageIntro>
 
     <section className="container page-section two-columns">
@@ -20,12 +20,12 @@ export function AboutPage() {
       <div className="about-story">
         <Eyebrow>DIT IS MIJN VERTREKPUNT</Eyebrow>
         <h2 className="section-title">Een studie. Een nieuw hoofdstuk.</h2>
-        <p>Ik ben Mats de Roon, 18 jaar, en ik studeer HBO Ondernemerschap &amp; Retail Management aan Hogeschool Rotterdam. Op deze website verzamel ik mijn persoonlijke en professionele ontwikkeling tijdens mijn eerste studiejaar.</p>
+        <p>Ik ben Mats de Roon, 19 jaar, en ik studeer HBO Ondernemerschap &amp; Retail Management aan Hogeschool Rotterdam. Op deze website verzamel ik mijn persoonlijke en professionele ontwikkeling tijdens mijn eerste studiejaar.</p>
         <p>Ik heb bij Facilicom op de BT-servicedesk gewerkt. Daar hielp ik mensen telefonisch bij computerproblemen en aan de balie met laptops, telefoons en andere apparatuur.</p>
         <p>Later wil ik een eigen bedrijf beginnen, het liefst met de verkoop van een product. Welk product dat wordt, wil ik tijdens mijn opleiding verder ontdekken. Dit portfolio laat zien welke stappen ik onderweg zet.</p>
         <dl className="facts-list">
           <div><dt>Naam</dt><dd>Mats de Roon</dd></div>
-          <div><dt>Leeftijd</dt><dd>18 jaar</dd></div>
+          <div><dt>Leeftijd</dt><dd>19 jaar</dd></div>
           <div><dt>Opleiding</dt><dd>Ondernemerschap &amp; Retail Management</dd></div>
           <div><dt>Hogeschool</dt><dd>Hogeschool Rotterdam</dd></div>
           <div><dt>Studiejaar</dt><dd>2026–2027 · Jaar 1</dd></div>
@@ -58,7 +58,7 @@ export function CvPage() {
         <h2>Mats de Roon<span className="orange">.</span></h2>
         <p>Student Ondernemerschap &amp; Retail Management</p>
         <dl className="facts-list">
-          <div><dt>Leeftijd</dt><dd>18 jaar</dd></div>
+          <div><dt>Leeftijd</dt><dd>19 jaar</dd></div>
           <div><dt>Niveau</dt><dd>HBO · Bachelor</dd></div>
           <div><dt>Studiejaar</dt><dd>2026–2027 · Jaar 1</dd></div>
         </dl>
